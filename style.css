@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15% 10%;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+/***Main ****/
+main {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+/*** Image ***/
+.image {
+    position: relative;
+    height: 30%;
+}
+
+.image img {
+    border-radius: 5px 5px 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.image::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    background-color: rgba(76, 33, 131, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+/**** Left items ****/
+
+.infos {
+    width: 100%;
+    padding: 0 20px 20px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.infos h1 {
+    margin: 30px auto;
+}
+
+.infos p {
+    margin: 30px auto;
+    width: 85%;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/****Statistics *****/
+.stat p {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 5px auto;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 1.3px;
+}
+
+.stat {
+    margin: 20px auto;
+}
+
+/***Attribution ****/
+
+.attribution {
+    margin-top: 50px;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+/***Media Queries ****/
+@media screen and (min-width:1243px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row-reverse;
+        height: 60vh;
+    }
+
+    .image {
+        width: 50%;
+        height: 100%;
+    }
+
+    .image img {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .infos {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        width: unset;
+        width: 50%;
+    }
+
+    .infos h1 {
+        font-size: 2.8em;
+        margin: unset;
+        padding: 20px;
+    }
+
+    .infos p {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .statistics {
+        display: flex;
+        justify-content: flex-start;
+        margin: 30px 20px 0 20px;
+    }
+
+    .stat {
+        margin: 0 30px;
+    }
+
+    .stat:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .stat h2 {
+        font-size: 1.9em;
+    }
+
+    .stat p {
+        font-size: 1em;
+        padding: 0;
+    }
+
+
+}
